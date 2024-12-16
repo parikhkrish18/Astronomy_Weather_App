@@ -1,0 +1,97 @@
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+
+.app{
+  background: linear-gradient(180deg, rgb(8, 5, 25) 0%, rgb(23, 6, 56) 30%, rgb(80, 28, 111) 100%);
+  background-color: rgb(80, 28, 111);
+  font-family: 'Helvetica Neue';
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  min-height: 100vh; 
+}
+.app__header {
+  background: #1d0537; 
+  padding: 20px;
+  text-align: center;
+  font-size: 24px;
+  color: #ffffff;
+  z-index: 1;
+  position: relative;
+}
+
+.app__details, .app__calendar-wrapper {
+  padding: 20px;
+  margin: 15px;
+  border-radius: 15px;
+  font-size: 16px;
+}
+
+.app__golden-text {
+  font-family: Comic Sans MS;
+  font-size: 30px;
+  color: rgb(169, 164, 151);
+  text-align: center;
+}
+
+.app__golden-text--secondary {
+  font-family: Comic Sans MS;
+  font-size: 24px;
+  color: rgb(169, 164, 151);
+  text-align: center;
+}
+
+.app__footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+}
+
+.app_content{
+  display: flex;
+  flex-direction: column;
+}
+
+.main{
+  display: flex;
+  flex-direction: column;
+  gap: 300px;
+  height: 100%;
+  flex: 1; /* Allows the main content to grow and fill available space */
+  overflow: auto;
+}
+
+.event-details{
+  background-color: rgb(80, 28, 111);
+  margin: 20px;
+  border-radius: 10px;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 5px 5px black;
+}
+
+.event-title{
+  display: flex;
+  font-weight: bold;
+  gap: 10px;
+  margin: 10px;
+  align-items: center;
+}
+
+.footeri {
+  display: flex;
+  justify-content: space-around; /* Use this for spacing around items */
+  /* Or use justify-content: space-between; for spacing between items */
+  background: rgb(80, 28, 111);
+  align-items: center;
+  border-top: white solid 1px;
+  padding: 20px;
+  margin: 0;
+}

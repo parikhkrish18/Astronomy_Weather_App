@@ -1,0 +1,42 @@
+.app-sunset-wrapper {
+  width: 40vw;
+  margin-left: 15px; /* Fixed typo from 15x to 15px */
+  height: 19vh;
+  background-color: rgb(42, 20, 77);
+  border-radius: 10px;
+  padding: 10px;
+  color: white;
+  font-family: 'Helvetica Neue';
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  box-shadow: 0px 5px 5px black;
+}
+
+.app-title {
+  display: flex;
+  gap: 3px;
+  justify-content: left;
+  align-items: center;
+  color: white;
+  height: 30px;
+}
+
+.app-sunset-image {
+  height: 28px;
+  width: 28px;
+}
+
+.app-desc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.app-svg {
+  display: flex;
+  position: absolute;
+  margin-top: 65px;
+}

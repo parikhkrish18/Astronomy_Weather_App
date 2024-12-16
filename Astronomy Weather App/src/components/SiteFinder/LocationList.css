@@ -1,0 +1,76 @@
+.sl-locations-container {
+  max-width: 100%;
+  margin: 0 auto 0 0;
+  padding: 20px;
+  box-sizing: border-box; 
+}
+
+.sl-carousel {
+  /* margin: 20px 0; */
+  overflow: hidden;
+}
+
+.sl-carousel .sl-slider-slide {
+  padding: 10px;
+  background: linear-gradient(135deg, #957DAD 0%, #D291BC 100%);
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+}
+
+.sl-carousel_page1, .sl-carousel_page2, .sl-carousel_page3 {
+  padding: 15px;
+  background-size: cover;
+}
+
+.sl-location {
+  margin-bottom: 15px;
+  padding: 15px;
+  background: linear-gradient(135deg, #957DAD 0%, #D291BC 100%);
+  border: 1px solid #a50fcf;
+  border-radius: 4px;
+  transition: transform 0.2s; 
+}
+
+.sl-location:hover {
+  transform: translateY(-5px); 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+}
+
+.sl-location h3 {
+  margin-top: 0;
+  color: #ffffff;
+}
+
+.sl-location p {
+  color: #ffffff;
+  font-size: 0.9em;
+  margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+  .sl-locations-container {
+    padding: 10px;
+  }
+  
+  .sl-carousel .sl-slider-slide {
+    padding: 5px;
+  }
+  
+  .sl-location {
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+  
+  .sl-location h3 {
+    font-size: 1em; 
+  }
+  
+  .sl-location p {
+    font-size: 0.8em; 
+  }
+}

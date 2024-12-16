@@ -1,0 +1,209 @@
+.root {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  font-family: 'Helvetica Neue';
+  align-items: center;
+}
+
+.wrapper{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.phone-layout{
+  height: 100vh;
+  background: linear-gradient(180deg, rgb(8, 5, 25) 0%, rgb(23, 6, 56) 30%, rgb(80, 28, 111) 100%);
+  background-color: rgb(80, 28, 111);
+  position: relative;
+  font-family: 'Helvetica Neue';
+  margin: 0;
+
+  overflow-x: hidden;
+}
+
+.star {
+  position: absolute;
+  background-color: white;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  opacity: 0.8;
+}
+
+@keyframes twinkle {
+  0%, 100% { opacity: 0.8; }
+  50% { opacity: 0.2; }
+}
+
+.wrapper{
+  height: 100%;
+}
+
+.scrollable-div {
+  border-radius: 20px;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 10px 0;
+  scrollbar-width: none;
+  width: 88vw;
+}
+
+table{
+  border-collapse: separate;
+}
+
+.forecast-title{
+  position: absolute;
+  margin-top: 10px;
+  font-family: 'Helvetica Neue';
+  color: white;
+  margin-left: 15px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: bold;
+}
+
+.forecast-visibility{
+  position: absolute;
+  margin-top: 160px;
+  font-family: 'Helvetica Neue';
+  color: white;
+  margin-left: 15px;
+  display: flex;
+  font-weight: bold;
+  align-items: center;
+  gap: 5px;
+}
+
+.visibility{
+  padding-top: 35px;
+}
+
+.scrollable-div::-webkit-scrollbar {
+  display: none;
+}
+
+.inner-content {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  white-space: nowrap;
+  scrollbar-width: none;
+}
+
+.forecast-container {
+  color: #fff;
+  background-color: rgb(42, 20, 77);
+  padding: 30px;
+  border-radius: 30px;
+  box-shadow: 0px 5px 5px black;
+  width: 100%;
+  font-weight: bold;
+}
+
+.forecast-item {
+  display: flex;
+  flex-direction: column;
+  min-width: 120px;
+  text-align: center;
+  padding: 15px;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.weatherIcon {
+  margin: auto;
+  height: 28px;
+  width: 28px;
+}
+
+.forecast-item p {
+  margin: 5px 0;
+}
+
+th, td {
+  text-align: center;
+  vertical-align: middle;
+  padding: 8px;
+}
+
+.calendar-desc{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  margin-bottom: 25px;
+  margin-top: 0px;
+  margin-left: 20px;
+  color: white;
+  gap: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+
+.metrics{
+  display: flex;
+  gap: 25px;
+}
+
+
+.input {
+  background: transparent; /* Make the background transparent */
+  border: none; /* Remove the border */
+  border-bottom: 1px solid white; /* Add a bottom border only */
+  font-size: 1em;
+  color: white; /* Set the text color to white */
+  width: 100%; /* Set the desired width */
+  padding: 0.5em 0; /* Add some padding on the top and bottom */
+  /* Set the font family to match your design */
+  font-family: 'Arial', sans-serif; 
+  text-align: center;
+
+  /* Remove the default outline style on focus */
+  outline: none;
+  
+}
+
+.calendar-logo{
+  height: 22px;
+  width: 22px;
+}
+/* Style the placeholder text */
+.input::placeholder {
+  color: rgba(255, 255, 255, 0.5); /* Light white color for placeholder text */
+}
+
+/* Remove the input highlight outline in Webkit browsers */
+.input:focus {
+  outline: none;
+}
+
+/* If you want to change the input text color while typing */
+.input:focus::placeholder {
+  color: transparent;
+  text-align: center;
+}
+
+/* You might need to adjust the alignment if it's not centered vertically */
+.input-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around; /* Use this for spacing around items */
+  /* Or use justify-content: space-between; for spacing between items */
+
+  align-items: center;
+  background-color: transparent;
+  border-top: white solid 1px;
+  padding: 20px;
+  margin: 0;
+}

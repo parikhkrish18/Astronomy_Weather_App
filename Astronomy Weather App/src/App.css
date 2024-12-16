@@ -1,0 +1,103 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #0b0432; 
+  color: white;
+ }
+ 
+ .header {
+  background: #1d0537; 
+  padding: 20px;
+  text-align: center;
+  font-size: 24px;
+  color: #ffffff;
+ }
+ 
+ .calendar {
+  background: #ffffff; 
+  padding: 15px;
+  margin: 15px;
+  border-radius: 20px; 
+ }
+ 
+ .month-title {
+  text-align: center;
+  font-size: 32px;
+  color: #060505; 
+  margin-bottom: 15px;
+ }
+ 
+ .weekdays {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  color: #000000; 
+ }
+ 
+ .weekdays div {
+  width: 14.28%;
+  text-align: center;
+  font-weight: bold;
+ }
+ 
+ .days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr); 
+  gap: 5px; 
+ }
+ 
+ .day {
+  height: 40px; 
+  line-height: 40px;
+  text-align: center;
+  margin-bottom: 5px;
+  position: relative;
+ }
+ 
+ 
+ .day span {
+  display: inline-block;
+  width: 30px; 
+  height: 30px; 
+  line-height: 30px;
+  border-radius: 50%; 
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+  color: #040303; 
+ }
+ 
+ 
+ .day:hover span {
+  background-color: #aaa; 
+  border-radius: 50%; 
+ }
+ 
+ 
+ .event {
+  background: #000000; 
+  border-radius: 8px;
+  padding: 5px;
+  margin: 10px 0;
+  text-align: center;
+ }
+ 
+ .details {
+  background: #120428; 
+  padding: 20px;
+  margin: 15px;
+  border-radius: 15px;
+  font-size: 16px;
+ }
+ 
+ .month-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+ }
+ 
+ .arrow {
+  cursor: pointer;
+  padding: 0 10px;
+  color: #110450; 
+  font-size: 24px; 
+ }
